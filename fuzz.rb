@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 require 'socket'
 
-hostname = '10.11.10.172'
+#change hostname to your target
+hostname = '127.0.0.1'
 port = 110
 
 buffer = ['A']
