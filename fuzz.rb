@@ -9,9 +9,10 @@ buffer = ['A']
 counter = 100
 
 while buffer.length <= 30
-        buffer.push('A'*counter)
+        buffer.push 'A'*counter
         counter+=200
 end
+
 buffer.each do |str|
         puts 'Fuzzing PASS with %s bytes' %str.length
         s = TCPSocket.new(hostname, port)
